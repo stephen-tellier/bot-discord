@@ -29,10 +29,12 @@ bot.on("message", function (message) {
           } else {
             place = ":black_small_square:";
           }
-
-          votelist = votelist.concat(
-            place + " **" + el.playername + "** - " + el.votes + " votes \n"
-          );
+          
+          if (el.playername != ''){
+            votelist = votelist.concat(
+              place + " **" + el.playername + "** - " + el.votes + " votes \n"
+            );
+          }
 
           n = n + 1;
         });
