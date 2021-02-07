@@ -34,9 +34,10 @@ bot.on("message", function (message) {
             votelist = votelist.concat(
               place + " **" + el.playername + "** - " + el.votes + " votes \n"
             );
+            n = n + 1;
           }
 
-          n = n + 1;
+          
         });
 
         message.channel.send({
