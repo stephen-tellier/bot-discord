@@ -40,7 +40,7 @@ bot.on("message", function (message) {
           
         });
 
-        message.channel.send({
+        message.author.send({
           embed: {
             title: "Les tops votes",
             description: votelist,
