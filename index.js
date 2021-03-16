@@ -42,7 +42,7 @@ bot.on("message", function (message) {
 
         message.author.send({
           embed: {
-            title: "Les tops votes",
+            title: "liste des votes",
             description: votelist,
 
             url:
