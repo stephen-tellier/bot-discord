@@ -83,7 +83,7 @@ bot.on("message", function (message) {
           
         });
 
-        message.author.send({
+        message.author.reply({
           embed: {
             title: "Winner !",
             description: votelist,
