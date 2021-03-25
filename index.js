@@ -79,8 +79,7 @@ bot.on("message", function (message) {
             );
             n = n + 1;
           }
-
-          
+      
         });
 
         message.reply({
