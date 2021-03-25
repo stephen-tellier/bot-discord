@@ -7,16 +7,16 @@ let url = "https://api.top-serveurs.net/v1/servers/HURZR2SCR6/players-ranking";
 
 let options = { json: true };
 
-let scheduledMessage = new cron.CronJob('00 0-59 * * * *', () => {
-  // This runs every day at 10:30:00, you can do anything you want
-  let channel = yourGuild.channels.get('783377719106469900');
-  channel.send('You message');
-});
+//let scheduledMessage = new cron.CronJob('00 0-59 * * * *', () => {
+//  // This runs every day at 10:30:00, you can do anything you want
+//  let channel = yourGuild.channels.get('783377719106469900');
+//  channel.send('You message');
+//});
 // You could also make a command to pause and resume the job
 
 bot.on("ready", function () {
 // When you want to start it, use:
-scheduledMessage.start()
+//scheduledMessage.start()
 });
 
 bot.on("message", function (message) {
