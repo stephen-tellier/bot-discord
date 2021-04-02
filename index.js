@@ -7,7 +7,7 @@ let url = "https://api.top-serveurs.net/v1/servers/HURZR2SCR6/players-ranking";
 
 let options = { json: true };
 
-let scheduledMessage = new cron.CronJob('0 0 23 1-31 * *', () => {
+let scheduledMessage = new cron.CronJob('0 0 23 * * *', () => {
   // This runs every day at 10:30:00, you can do anything you want
   const chan = bot.channels.cache.find(channel => channel.id ==='807572042857447474');
 chan.send("it's works!");
