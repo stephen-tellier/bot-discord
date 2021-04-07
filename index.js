@@ -10,7 +10,6 @@ let options = { json: true };
 let scheduledMessage = new cron.CronJob('0 0 23 * * *', () => {
   // This runs every day at 10:30:00, you can do anything you want
   const chan = bot.channels.cache.find(channel => channel.id ==='807572042857447474');
-chan.send("it's works!");
 
   request(url, options, (error, res, body) => {
     if (error) {
@@ -43,7 +42,7 @@ chan.send("it's works!");
 
       chan.send({
         embed: {
-          title: "Les Gagnants sont :",
+          title: "Les Gagnants de l'item sont :",
           description: votelist,
 
           url:
